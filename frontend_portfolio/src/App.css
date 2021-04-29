@@ -3,8 +3,10 @@
 
 html {
    min-height: 100%;
-   background: radial-gradient(ellipse at top, #4E65FF, transparent),
-             radial-gradient(ellipse at bottom, #92EFFD, transparent);
+   background: linear-gradient(#4E65FF, transparent),
+             linear-gradient(#92EFFD, transparent),
+             linear-gradient(#4E65FF, transparent),
+             linear-gradient(#011ffd, transparent);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
@@ -18,21 +20,60 @@ html {
   color: #fcf7eb;
 }
 
-
+.projectsDiv {
+  margin: auto;
+  width: 90%;
+  height: 30rem;
+  border: solid 1px white;
+  border-radius: 10px
+}
 
 
 h1 {
-  animation: fade-in 5s;
+  animation: fade-in 3s;
   font-family: Amaranth;
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+
+#twu, #software {
+  color: #08f7fe;;
 }
 
 h3 {
+  animation: fade-in 7s;
+  margin-top: 0;
   font-family: Amaranth;
+
 }
 
 .navDiv {
   display: flex;
   justify-content: space-evenly;
+  color: #f148fb;
+}
+
+#about {
+  font-family: Amaranth;
+  color: #f148fb;
+}
+
+.brandStatementDiv {
+  background: rgba(0, 0, 0, .15);
+
+  margin: auto;
+  width: 75%;
+  border-radius: 5px;
+}
+
+.brandStatementDiv > p {
+  padding: .5rem;
+  margin: .5rem;
+}
+
+footer {
+  width: 100;
+  height: 5rem;
 }
 
 
