@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap');
+
+
+html {
+   min-height: 100%;
+   background: radial-gradient(ellipse at top, #4E65FF, transparent),
+             radial-gradient(ellipse at bottom, #92EFFD, transparent);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+
+
+
+.App {
+  text-align: center;
+  color: #fcf7eb;
+}
+
+
+
+
+h1 {
+  animation: fade-in 5s;
+  font-family: Amaranth;
+}
+
+h3 {
+  font-family: Amaranth;
+}
+
+.navDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+@keyframes fade-in {
+  0%   { opacity: 0; }
+ 100% { opacity: 1; }
+}
