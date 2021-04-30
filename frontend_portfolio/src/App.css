@@ -40,6 +40,10 @@ h1 {
   color: #08f7fe;;
 }
 
+#skills {
+  color: #f148fb;
+}
+
 h3 {
   animation: fade-in 7s;
   margin-top: 0;
