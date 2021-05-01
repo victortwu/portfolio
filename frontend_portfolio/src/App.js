@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import './App.css';
 import TextLoop from 'react-text-loop'
+import ProjectOne from './ProjectOne'
+import ProjectTwo from './ProjectTwo'
+import ProjectThree from './ProjectThree'
 
 class App extends Component {
   constructor(props) {
@@ -61,11 +64,12 @@ render() {
               </tbody>
             </table>
 
-
+            <h4>F E A T U R E D    P R O J E C T S :</h4>
 
             <div className='projectsDiv'>
-
-
+              <ProjectOne/>
+              <ProjectTwo/>
+              <ProjectThree/>
             </div>
 
             <h4 id='about'>ABOUT</h4>
