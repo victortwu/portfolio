@@ -5,19 +5,40 @@ import TextLoop from 'react-text-loop'
 class App extends Component {
   constructor(props) {
     super(props)
-
+      this.state = {
+        darkMode: false
+      }
     }
 
+toggleDarkMode = () => {
+  this.setState({
+    darkMode: true
+  })
+}
+
+toggleLightMode = () => {
+  this.setState({
+    darkMode: false
+  })
+}
 
 
+render() {
+      console.log(this.state)
 
-    render() {
+      const toggleBackGround = this.state.darkMode ? 'darkMode' : 'lightMode'
 
 
       return (
+      <main className={toggleBackGround}>
         <div className="App">
         <nav>
           <div className='navDiv'>
+              {
+                !this.state.darkMode
+                ? <h4 onClick={()=> this.toggleDarkMode()}>Dark Mode</h4>
+                : <h4 onClick={()=> this.toggleLightMode()}>Light Mode</h4>
+              }
               <h4 id='githubLink'>GitHub</h4>
               <h4 id='linkedInLink'>LinkedIn</h4>
               <h4 id='resumeLink'>Resume</h4>
@@ -25,10 +46,23 @@ class App extends Component {
         </nav>
 
             <h1>VICTOR <span id='twu'>TWU</span></h1>
-            <h3><span id='software'>SOFTWARE</span> DEVELOPER<span> () => </span>
-            <span id='skills'>
-              <TextLoop interval={1000} children={['JavaScript', 'Python', 'CSS3', 'React.js', 'Express.js', 'Node.js', 'MongoDB', 'SQL', 'HTML5']} />
-            </span></h3>
+            <table className='secondHeading'>
+              <tbody>
+                <tr>
+                  <td>
+                        <h3><span id='software'>SOFTWARE</span> DEVELOPER<span> () => </span></h3>
+                  </td>
+                  <td id='textLoopCell'>
+                        <h3><span id='skills'>
+                          <TextLoop interval={1000} children={['JavaScript', 'Python', 'CSS3', 'React.js', 'Express.js', 'Node.js', 'MongoDB', 'SQL', 'HTML5']} />
+                        </span></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
             <div className='projectsDiv'>
 
 
@@ -36,11 +70,12 @@ class App extends Component {
 
             <h4 id='about'>ABOUT</h4>
             <div className='brandStatementDiv'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
+            <p>Full stack software engineer and restaurateur with frontend and backend experience.  Will steward data from third parties such as UberEats, Doordash to the restaurant owner's bookeeping system.  I built my restaurant during the 2008 financial crisis and am surviving the restaurant through a global pandemic - a testament to my grit, determination, adaptability and even-tempered leadership. I bring strong people skills, business savvy and a forward thinking attitude. </p>
             </div>
             <footer>
             </footer>
         </div>
+        </main>
       )
     }
   }

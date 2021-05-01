@@ -1,18 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap');
 
 
-html {
+
+.lightMode {
    min-height: 100%;
-   background: linear-gradient(#4E65FF, transparent),
-             linear-gradient(#92EFFD, transparent),
-             linear-gradient(#4E65FF, transparent),
-             linear-gradient(#011ffd, transparent);
-   background-size: cover;
+   background: linear-gradient(#4E65FF, #92EFFD),
+                linear-gradient(#4E65FF, #011ffd);
+  background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
 }
 
+.darkMode {
+  min-height: 100%;
+  background: linear-gradient(#170730, #1e2342);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
+#bckGrndBtn {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 1em;
+  color: #f148fb;
+
+}
 
 
 .App {
@@ -36,12 +50,23 @@ h1 {
   margin-bottom: 0;
 }
 
+.secondHeading {
+  margin: auto;
+}
+
 #twu, #software {
   color: #08f7fe;;
 }
 
 #skills {
   color: #f148fb;
+}
+
+#textLoopCell {
+  position: absolute;
+  float: right;
+  padding-left: .5em;
+
 }
 
 h3 {
@@ -55,6 +80,12 @@ h3 {
   display: flex;
   justify-content: space-evenly;
   color: #f148fb;
+}
+
+.navDiv > h4:hover {
+  transform: scale(1.2, 1.2);
+  transition: transform 330ms ease-in-out;
+  cursor: pointer;
 }
 
 #about {
