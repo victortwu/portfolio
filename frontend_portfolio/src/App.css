@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 
 .lightMode {
    min-height: 100%;
-   background: linear-gradient(#4E65FF, #92EFFD),
-                linear-gradient(#4E65FF, #011ffd);
-  background-size: cover;
+   /* background: linear-gradient(#4E65FF, #92EFFD),
+                linear-gradient(#4E65FF, #011ffd); */
+   background: linear-gradient(#3b27ba,#652ec7, #560a86);
+   background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
 }
@@ -34,29 +35,33 @@
   color: #fcf7eb;
 }
 
+
 .projectsDiv {
+
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-evenly;
   margin: auto;
   width: 90%;
   height: 30rem;
 
-  border-radius: 10px
 }
 
+
+
 .projectCard {
-  width: 20%;
-  height: 85%;
+  width: 30%;
+  height: 80%;
   margin: 1.5em;
   border: solid .5em #f148fb;
   box-shadow: inset 0 0 0.5em 0 #f148fb, 0 0 0.5em 0 #f148fb;
-
+  border-radius: .5em;
 }
 
 
 h1 {
   animation: fade-in 3s;
-  font-family: Amaranth;
+  font-family: Fjalla One;
   font-size: 3.5rem;
   margin-bottom: 0;
 }
@@ -83,7 +88,7 @@ h1 {
 h3 {
   animation: fade-in 7s;
   margin-top: 0;
-  font-family: Amaranth;
+  font-family: Fjalla One;
 
 }
 
@@ -100,21 +105,22 @@ h3 {
 }
 
 #about {
-  font-family: Amaranth;
+  font-family: Fjalla One;
   color: #f148fb;
 }
 
 .brandStatementDiv {
-  background: rgba(0, 0, 0, .15);
-
   margin: auto;
+  padding-top: 1rem;
+
   width: 75%;
   border-radius: 5px;
 }
 
 .brandStatementDiv > p {
+  width: 75%;
   padding: .5rem;
-  margin: .5rem;
+  margin: auto;
 }
 
 footer {

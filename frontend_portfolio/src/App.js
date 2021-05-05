@@ -48,12 +48,12 @@ render() {
           </div>
         </nav>
 
-            <h1>VICTOR <span id='twu'>TWU</span></h1>
+            <h1>Victor <span id='twu'>Twu</span></h1>
             <table className='secondHeading'>
               <tbody>
                 <tr>
                   <td>
-                        <h3><span id='software'>SOFTWARE</span> DEVELOPER<span> () => </span></h3>
+                        <h3><span id='software'>software</span>Developer<span> () => </span></h3>
                   </td>
                   <td id='textLoopCell'>
                         <h3><span id='skills'>
@@ -64,21 +64,36 @@ render() {
               </tbody>
             </table>
 
-            <h4>F E A T U R E D    P R O J E C T S :</h4>
 
-            <div className='projectsDiv'>
-              <ProjectOne/>
-              <ProjectTwo/>
-              <ProjectThree/>
-            </div>
 
-            <h4 id='about'>ABOUT</h4>
-            <div className='brandStatementDiv'>
-            <p>Full stack software engineer and restaurateur with frontend and backend experience.  Will steward data from third parties such as UberEats, Doordash to the restaurant owner's bookeeping system.  I built my restaurant during the 2008 financial crisis and am surviving the restaurant through a global pandemic - a testament to my grit, determination, adaptability and even-tempered leadership. I bring strong people skills, business savvy and a forward thinking attitude. </p>
-            </div>
+
+
+
+
+
+
+
+            <h4>FEATURED  PROJECTS:</h4>
+              <div className='projectsDiv'>
+
+                <ProjectOne/>
+                <ProjectTwo/>
+                <ProjectThree/>
+              </div>
+
+              <div className='brandStatementDiv'>
+                  <h4 id='about'>ABOUT</h4>
+                  <p>Full stack software engineer and restaurateur with frontend and backend experience.  Will steward data from third parties such as UberEats, Doordash to the restaurant owner's bookeeping system.</p>
+                  <p>I built my restaurant during the 2008 financial crisis and am surviving the restaurant through a global pandemic - a testament to my grit, determination, adaptability and even-tempered leadership. I bring strong people skills, business savvy and a forward thinking attitude. </p>
+              </div>
+
+
+
+
             <footer>
+            <h1> footer</h1>
             </footer>
-        </div>
+          </div>
         </main>
       )
     }
