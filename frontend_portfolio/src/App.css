@@ -106,6 +106,7 @@
   background-size: cover;
   background-blend-mode: overlay;
   border: solid .5em #f148fb;
+  border-radius: .5em;
   color: #f148fb;
 }
 
@@ -153,11 +154,13 @@
   background-size: cover;
   background-blend-mode: overlay;
   border: solid .5em #f148fb;
+  border-radius: .5em;
   color: #08f7fe;
 }
 
 
 h1 {
+  padding-top: 2.5rem;
   animation: fade-in 3s;
   font-family: Fjalla One;
   font-size: 3.5rem;
@@ -183,6 +186,15 @@ h1 {
 
 }
 
+.projectHeading {
+  padding-top: 2rem;
+  margin: auto;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 h3 {
   animation: fade-in 7s;
   margin-top: 0;
@@ -193,7 +205,9 @@ h3 {
 .navDiv {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 2rem;
   color: #f148fb;
+
 }
 
 .navDiv > h4:hover {
@@ -209,7 +223,7 @@ h3 {
 
 .brandStatementDiv {
   margin: auto;
-  padding-top: 1rem;
+  padding-top: 3rem;
 
   width: 75%;
   border-radius: 5px;

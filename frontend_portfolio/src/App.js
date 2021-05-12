@@ -64,21 +64,33 @@ render() {
               </tbody>
             </table>
 
+            <div className='projectHeading'>
+                    <div>f</div>
+                      <div>e</div>
+                      <div>a</div>
+                      <div>t</div>
+                      <div>u</div>
+                      <div>r</div>
+                      <div>e</div>
+                      <div>d </div>
+                      <div></div>
+                      <div>p</div>
+                      <div>r</div>
+                      <div>o</div>
+                      <div>j</div>
+                      <div>e</div>
+                      <div>c</div>
+                      <div>t</div>
+                      <div>s</div>
+                  
+            </div>
 
-
-
-
-
-
-
-
-
-            <h4>FEATURED  PROJECTS:</h4>
               <div className='projectsDiv'>
 
-                <ProjectOne/>
-                <ProjectTwo/>
-                <ProjectThree/>
+                  <ProjectOne/>
+                  <ProjectTwo/>
+                  <ProjectThree/>
+
               </div>
 
               <div className='brandStatementDiv'>
