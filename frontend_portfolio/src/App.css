@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
-:root {
+/* :root {
   --level-one: translateZ(3rem);
   --level-two: translateZ(6rem);
   --level-three: translateZ(9rem);
@@ -15,7 +15,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
-}
+} */
 
 .lightMode {
    min-height: 100%;
@@ -64,29 +64,29 @@
 
 
 
-.projectCard {
+/* .projectCard {
   width: 30%;
   height: 80%;
   margin: 1.5em;
   /* border: solid .5em #f148fb;
   box-shadow: inset 0 0 0.5em 0 #f148fb, 0 0 0.5em 0 #f148fb;
   border-radius: .5em; */
-}
+/* } */
 
-.card__content {
+/* .card__content {
   text-align: center;
   position: relative;
   padding: 15em 5em;
   transition: transform 3s;
 
   transform-style: preserve-3d;
-}
+} */
 
-.projectCard:hover .card__content {
+/* .projectCard:hover .card__content {
   transform: rotateY(.5turn);
-}
+} */
 
-.card__front,
+/* .card__front,
 .card__back {
   position: absolute;
   top: 0;
@@ -98,19 +98,22 @@
   transform-style: preserve-3d;
   display: grid;
   align-content: center;
-}
+  border: solid .5em #f148fb;
+  box-shadow: inset 0 0 0.5em 0 #f148fb, 0 0 0.5em 0 #f148fb;
+  border-radius: .5em;
+} */
 
-.card__front {
+/* .card__front {
   background-color: var(--clr);
   background-image: url(https://i.imgur.com/9IuZiVC.png);
   background-size: cover;
-  background-blend-mode: overlay;
-  border: solid .5em #f148fb;
-  border-radius: .5em;
-  color: #f148fb;
-}
+  background-blend-mode: overlay; */
+  /* border: solid .5em #f148fb; */
 
-.card__front::before {
+  /* color: #f148fb;
+} */
+
+/* .card__front::before {
   content: '';
   position: absolute;
   --spacer: 1em;
@@ -118,11 +121,12 @@
   bottom: var(--spacer);
   left: var(--spacer);
   right: var(--spacer);
-  border: 3px solid white;
+  border: .2em solid #f148fb;
+  border-radius: .5em;
   transform: var(--level-one);
-}
+} */
 
-.card__title {
+/* .card__title {
   font-size: 1.5rem;
   transform: var(--level-three);
   order: 2;
@@ -143,20 +147,20 @@
   font-weight: var(fw-normal);
   font-size: 1rem;
   line-height: 1.6;
-}
+} */
 
 
 
-.card__back {
+/* .card__back {
   transform: rotateY(.5turn);
-  background-color: var(--clr);
+  background-color: #6381bf;
   background-image: url(https://i.imgur.com/9IuZiVC.png);
   background-size: cover;
   background-blend-mode: overlay;
-  border: solid .5em #f148fb;
-  border-radius: .5em;
-  color: #08f7fe;
-}
+  /* border: solid .5em #f148fb; */
+
+  /* color: #08f7fe;
+} */
 
 
 h1 {
@@ -183,7 +187,7 @@ h1 {
   position: absolute;
   float: right;
   padding-left: .5em;
-
+  text-shadow: .1em .4em .9em #f148fb;
 }
 
 .projectHeading {

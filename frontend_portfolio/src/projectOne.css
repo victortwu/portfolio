@@ -1,0 +1,114 @@
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --clr: #dadae0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.projectCard1 {
+  width: 30%;
+  height: 80%;
+  margin: 1.5em;
+  /* border: solid .5em #f148fb;
+  box-shadow: inset 0 0 0.5em 0 #f148fb, 0 0 0.5em 0 #f148fb;
+  border-radius: .5em; */
+}
+
+.card__content1 {
+  text-align: center;
+  position: relative;
+  padding: 15em 5em;
+  transition: transform 3s;
+
+  transform-style: preserve-3d;
+}
+
+.projectCard1:hover .card__content1 {
+  transform: rotateY(.5turn);
+}
+
+.card__front1,
+.card__back1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border: solid .5em #f148fb;
+  box-shadow: inset 0 0 0.5em 0 #f148fb, 0 0 0.5em 0 #f148fb;
+  border-radius: .5em;
+}
+
+.card__front1 {
+  background-color: var(--clr);
+  background-image: url(https://i.imgur.com/9IuZiVC.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  /* border: solid .5em #f148fb; */
+
+  color: #f148fb;
+}
+
+.card__front1::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: .2em solid #f148fb;
+  border-radius: .5em;
+  transform: var(--level-one);
+}
+
+.card__title1 {
+  font-size: 1.5rem;
+  transform: var(--level-three);
+  order: 2;
+  text-transform: uppercase;
+}
+
+.card__subtitle1 {
+  transform: var(--level-two);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: .75rem;
+  font-weight: var(--fw-bold);
+  opacity: .7;
+}
+
+.card__body1 {
+  transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+
+.card__back1 {
+  transform: rotateY(.5turn);
+  background-color: #6381bf;
+  background-image: url(https://i.imgur.com/9IuZiVC.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  /* border: solid .5em #f148fb; */
+
+  color: #08f7fe;
+}
