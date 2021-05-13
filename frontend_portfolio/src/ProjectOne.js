@@ -2,7 +2,7 @@ import './projectOne.css'
 
 const ProjectOne = () => {
     return(
-      <div className='projectCard1'>
+      <a href='https://victortwu.github.io/GAproject1/' target='none'><div className='projectCard1'>
       <div class="card__content1">
 
              <div className="card__front1">
@@ -16,7 +16,7 @@ const ProjectOne = () => {
 
         </div>
 
-      </div>
+      </div></a>
 
 
     )
