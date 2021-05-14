@@ -9,19 +9,19 @@ class App extends Component {
   constructor(props) {
     super(props)
       this.state = {
-        darkMode: false
+        toggleLightMode: false
       }
     }
 
 toggleDarkMode = () => {
   this.setState({
-    darkMode: true
+    lightMode: true
   })
 }
 
 toggleLightMode = () => {
   this.setState({
-    darkMode: false
+    lightMode: false
   })
 }
 
@@ -29,40 +29,41 @@ toggleLightMode = () => {
 render() {
       console.log(this.state)
 
-      const toggleBackGround = this.state.darkMode ? 'darkMode' : 'lightMode'
+      const toggleBackGround = this.state.lightMode ? 'lightMode' : 'darkMode'
 
 
       return (
       <main className={toggleBackGround}>
         <div className="App">
         <nav>
-          <div className='navDiv'>
-              {
-                !this.state.darkMode
-                ? <h4 onClick={()=> this.toggleDarkMode()}>Dark Mode</h4>
-                : <h4 onClick={()=> this.toggleLightMode()}>Light Mode</h4>
-              }
-              <h4 id='githubLink'>GitHub</h4>
-              <h4 id='linkedInLink'>LinkedIn</h4>
-              <h4 id='resumeLink'>Resume</h4>
-          </div>
-        </nav>
+              <div className='navDiv'>
+                  {
+                    !this.state.lightMode
+                    ? <h4 onClick={()=> this.toggleDarkMode()}>Bright Mode</h4>
+                    : <h4 onClick={()=> this.toggleLightMode()}>Dark Mode</h4>
+                  }
+                  <h4 id='githubLink'>GitHub</h4>
+                  <h4 id='linkedInLink'>LinkedIn</h4>
+                  <h4 id='resumeLink'>Resume</h4>
+              </div>
 
-            <h1>Victor <span id='twu'>Twu</span></h1>
-            <table className='secondHeading'>
-              <tbody>
-                <tr>
-                  <td>
-                        <h3><span id='software'>software</span>Developer<span> () => </span></h3>
-                  </td>
-                  <td id='textLoopCell'>
-                        <h3><span id='skills'>
-                          <TextLoop interval={1000} children={['JavaScript', 'Python', 'CSS3', 'React.js', 'Express.js', 'Node.js', 'MongoDB', 'SQL', 'HTML5']} />
-                        </span></h3>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+
+                <h1>Victor <span id='twu'>Twu</span></h1>
+                <table className='secondHeading'>
+                  <tbody>
+                    <tr>
+                      <td>
+                            <h3><span id='software'>software</span>Developer<span> () => </span></h3>
+                      </td>
+                      <td id='textLoopCell'>
+                            <h3><span id='skills'>
+                              <TextLoop interval={1000} children={['JavaScript', 'Python', 'CSS3', 'React.js', 'Express.js', 'Node.js', 'MongoDB', 'SQL', 'HTML5']} />
+                            </span></h3>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+          </nav>
 
             <div className='projectHeading'>
                   featured projects
