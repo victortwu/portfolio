@@ -46,7 +46,7 @@
 
 .card__front3 {
   background-color: var(--clr);
-  background-image: url(https://i.imgur.com/00NcINi.jpg);
+  background-image: url('./images/customdashboard.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -95,7 +95,7 @@
 .card__back3 {
   transform: rotateY(.5turn);
   background-color: #6381bf;
-  background-image: url(https://i.imgur.com/00NcINi.jpg);
+  background-image: url('./images/customdashboard.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

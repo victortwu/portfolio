@@ -49,7 +49,7 @@
 
 .card__front2 {
   background-color: var(--clr);
-  background-image: url(https://i.imgur.com/t1AYw1i.png);
+  background-image: url('./images/restaurantapp.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -101,7 +101,7 @@
 .card__back2 {
   transform: rotateY(.5turn);
   background-color: #6381bf;
-  background-image: url(https://i.imgur.com/t1AYw1i.png);
+  background-image: url('./images/restaurantapp.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

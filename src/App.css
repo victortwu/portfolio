@@ -8,7 +8,7 @@
    /* background: linear-gradient(#4E65FF, #92EFFD),
                 linear-gradient(#4E65FF, #011ffd); */
    /* background: linear-gradient(#3b27ba,#652ec7, #560a86); */
-   background: linear-gradient(#ff8b3d,#ff9d5c, #ffaf7a); 
+   background: linear-gradient(#ff8b3d,#ff9d5c, #ffaf7a);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
@@ -98,7 +98,11 @@ h3 {
   justify-content: space-evenly;
   padding-top: 2rem;
   color: #f148fb;
+}
 
+.navDiv > h4 > a {
+  color: #f148fb;
+  text-decoration: none;
 }
 
 .navDiv > h4:hover {

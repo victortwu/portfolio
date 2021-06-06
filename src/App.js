@@ -42,9 +42,9 @@ render() {
                     ? <h4 onClick={()=> this.toggleDarkMode()}>Bright Mode</h4>
                     : <h4 onClick={()=> this.toggleLightMode()}>Dark Mode</h4>
                   }
-                  <h4 id='githubLink'>GitHub</h4>
-                  <h4 id='linkedInLink'>LinkedIn</h4>
-                  <h4 id='resumeLink'>Resume</h4>
+                  <h4 id='githubLink'><a href='https://github.com/victortwu' target='none'>GitHub</a></h4>
+                  <h4 id='linkedInLink'><a href='https://www.linkedin.com/in/victor-twu-6292631b1/' target='none'>LinkedIn</a></h4>
+                  <h4 id='resumeLink'><a href='https://docs.google.com/document/d/17n-inD_l5K_zb6C8aknWffRcIbdIMsC7_K1dTo6vpYM/edit?usp=sharing' target='none'>Resume</a></h4>
               </div>
 
 

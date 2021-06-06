@@ -2,7 +2,7 @@ import './projectThree.css'
 
 const ProjectThree = () => {
     return(
-      <div className='projectCard3'>
+      <a href='https://custom-restaurant-dashboard.herokuapp.com/' target='none'><div className='projectCard3'>
       <div class="card__content3">
 
              <div className="card__front3">
@@ -15,7 +15,7 @@ const ProjectThree = () => {
              </div>
 
         </div>
-      </div>
+      </div></a>
 
 
     )
