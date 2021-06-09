@@ -22,6 +22,73 @@
   background-position: center center;
 }
 
+.mainContainer {
+  padding: 1rem;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.5fr 1.2fr 1.2fr 1.2fr 0.5fr 1.2fr 0.5fr 1.2fr 0.2fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "titleLogo titleLogo projectsHeading projectsHeading"
+    "titleLogo titleLogo proj1Div proj1Div"
+    "titleLogo titleLogo proj2Div proj2Div"
+    "titleLogo titleLogo proj3Div proj3Div"
+    "titleLogo titleLogo aboutTitle aboutTitle"
+    "titleLogo titleLogo aboutContent aboutContent"
+    "titleLogo titleLogo skillsTitle skillsTitle"
+    "titleLogo titleLogo skillsContent skillsContent"
+    "footer footer footer footer";
+  grid-gap: 1rem;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.titleLogo {
+  grid-area: titleLogo;
+}
+
+.projectsHeading {
+  grid-area: projectsHeading;
+}
+
+.proj1Div {
+  grid-area: proj1Div;
+}
+
+.proj2Div {
+  grid-area: proj2Div;
+}
+
+.proj3Div {
+  grid-area: proj3Div;
+}
+
+.proj1Div, .proj2Div, .proj3Div {
+  margin-top: 2rem;
+}
+
+.aboutTitle {
+  grid-area: aboutTitle;
+}
+
+.aboutContent {
+  grid-area: aboutContent;
+}
+
+.skillsTitle {
+  grid-area: skillsTitle;
+}
+
+.skillsContent {
+  grid-area: skillsContent;
+}
+
+
+
+
 #bckGrndBtn {
   background: none;
   border: none;
@@ -81,9 +148,12 @@ h1 {
 
 .projectHeading {
   padding-top: 3rem;
-  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 75%;
-  letter-spacing: 1.5rem;
+  /* letter-spacing: 1rem; */
 }
 
 h3 {
@@ -131,8 +201,8 @@ h3 {
 }
 
 footer {
-  width: 100;
-  height: 5rem;
+  grid-area: footer;
+
 }
 
 
@@ -141,4 +211,23 @@ footer {
 @keyframes fade-in {
   0%   { opacity: 0; }
  100% { opacity: 1; }
+}
+
+@media only screen and (max-width:500px) {
+  .mainContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr .2fr 0.2fr 1.2fr 1.2fr 1.2fr 0.2fr 1.2fr 0.2fr 1.2fr 0.2fr;
+    grid-template-areas:
+      'nav'
+      'titleLogo'
+      'projectsHeading'
+      'proj1Div'
+      'proj2Div'
+      'proj3Div'
+      'aboutTitle'
+      'aboutContent'
+      'skillsTitle'
+      'skillsContent'
+      'footer';
+  }
 }

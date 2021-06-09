@@ -33,8 +33,10 @@ render() {
 
 
       return (
+
       <main className={toggleBackGround}>
-        <div className="App">
+      <div className='mainContainer'>
+
 
                 <nav>
                       <div className='navDiv'>
@@ -49,7 +51,7 @@ render() {
                       </div>
                   </nav>
 
-                  <div className='tittleLogo'>
+                  <div className='titleLogo'>
                         <h1>Victor <span id='twu'>Twu</span></h1>
                         <table className='secondHeading'>
                           <tbody>
@@ -68,10 +70,10 @@ render() {
                   </div>
 
             <div className='projectHeading'>
-                  featured projects
+                  <h3>featured projects</h3>
             </div>
 
-              <div className='projectsDiv'>
+
                 <div className='proj1Div'>
                   <ProjectOne/>
                 </div>
@@ -82,28 +84,38 @@ render() {
                   <ProjectThree/>
                 </div>
 
-              </div>
 
 
-              <div className='brandStatementDiv'>
-                <div className='aboutTitle'/>
+
+
+                <div className='aboutTitle'>
                   <h4 id='about'>ABOUT</h4>
                 </div>
                 <div className='aboutContent'>
                   <p>Full stack software engineer and restaurateur with frontend and backend experience.  Will steward data from third parties such as UberEats, Doordash to the restaurant owner's bookeeping system.</p>
                   <p>I built my restaurant during the 2008 financial crisis and am surviving the restaurant through a global pandemic - a testament to my grit, determination, adaptability and even-tempered leadership. I bring strong people skills, business savvy and a forward thinking attitude. </p>
                 </div>
+
+
+              <div className='skillsTitle'>
+                  <h4>SKILLS</h4>
+              </div>
+
+              <div className='skillsContent'>
+                <p>Some skills and stuff</p>
               </div>
 
 
 
-
             <footer>
-            <h1> footer</h1>
+            <h5> footer</h5>
             </footer>
 
 
+
+            </div>
         </main>
+
       )
     }
   }
