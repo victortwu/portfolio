@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 
 .lightMode {
@@ -29,32 +29,47 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 0.5fr 1.2fr 1.2fr 1.2fr 0.5fr 1.2fr 0.5fr 1.2fr 0.2fr;
   grid-template-areas:
-    "nav nav nav nav"
-    "titleLogo titleLogo projectsHeading projectsHeading"
-    "titleLogo titleLogo proj1Div proj1Div"
-    "titleLogo titleLogo proj2Div proj2Div"
-    "titleLogo titleLogo proj3Div proj3Div"
-    "titleLogo titleLogo aboutTitle aboutTitle"
+    "topSpacer topSpacer topSpacer topSpacer"
+    "titleLogo titleLogo projectsDiv projectsDiv"
+    "titleLogo titleLogo projectsDiv projectsDiv"
+    "titleLogo titleLogo projectsDiv projectsDiv"
+    "titleLogo titleLogo projectsDiv projectsDiv"
     "titleLogo titleLogo aboutContent aboutContent"
-    "titleLogo titleLogo skillsTitle skillsTitle"
+    "titleLogo titleLogo aboutContent aboutContent"
+    "titleLogo titleLogo skillsContent skillsContent"
     "titleLogo titleLogo skillsContent skillsContent"
     "footer footer footer footer";
   grid-gap: 1rem;
 }
 
-nav {
-  grid-area: nav;
+.topSpacer {
+  grid-area: topSpacer;
 }
 
 .titleLogo {
   grid-area: titleLogo;
 }
 
-.projectsHeading {
-  grid-area: projectsHeading;
+.logo {
+  position: fixed;
+  top: 40%;
+  z-index: 1;
 }
 
-.proj1Div {
+.logo > h1 {
+  font-size: 4.5rem;
+  font-family: 'Lobster', cursive;
+  padding-top: .2em;
+  animation: fade-in 3s;
+}
+
+/* .projectsHeading {
+  grid-area: projectsHeading;
+
+
+} */
+
+/* .proj1Div {
   grid-area: proj1Div;
 }
 
@@ -64,23 +79,23 @@ nav {
 
 .proj3Div {
   grid-area: proj3Div;
-}
+} */
 
 .proj1Div, .proj2Div, .proj3Div {
   margin-top: 2rem;
 }
 
-.aboutTitle {
+/* .aboutTitle {
   grid-area: aboutTitle;
-}
+} */
 
 .aboutContent {
   grid-area: aboutContent;
 }
 
-.skillsTitle {
+/* .skillsTitle {
   grid-area: skillsTitle;
-}
+} */
 
 .skillsContent {
   grid-area: skillsContent;
@@ -106,28 +121,32 @@ nav {
 
 
 .projectsDiv {
-
+  grid-area: projectsDiv;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+  /* align-items: center; */
+  flex-wrap: nowrap;
   margin: auto;
   width: 90%;
-  height: 40rem;
+  /* height: 40rem; */
 
 }
 
-h1 {
+/* h1 {
   padding-top: 2.5rem;
   animation: fade-in 3s;
   font-family: Fjalla One;
   font-size: 3.5rem;
   margin-bottom: 0;
-}
+} */
 
 .secondHeading {
   margin: auto;
+}
+
+#victor, #developer {
+  color: white;
 }
 
 #twu, #software {
@@ -156,6 +175,8 @@ h1 {
   /* letter-spacing: 1rem; */
 }
 
+
+
 h3 {
   animation: fade-in 7s;
   margin-top: 0;
@@ -170,12 +191,12 @@ h3 {
   color: #f148fb;
 }
 
-.navDiv > h4 > a {
+.navDiv > h5 > a {
   color: #f148fb;
   text-decoration: none;
 }
 
-.navDiv > h4:hover {
+.navDiv > h5:hover {
   transform: scale(1.2, 1.2);
   transition: transform 330ms ease-in-out;
   cursor: pointer;
@@ -218,16 +239,22 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr .2fr 0.2fr 1.2fr 1.2fr 1.2fr 0.2fr 1.2fr 0.2fr 1.2fr 0.2fr;
     grid-template-areas:
-      'nav'
+      'topSpacer'
       'titleLogo'
-      'projectsHeading'
-      'proj1Div'
-      'proj2Div'
-      'proj3Div'
+      'projectsDiv'
+      'projectsDiv'
+      'projectsDiv'
+      'projectsDiv'
       'aboutTitle'
       'aboutContent'
       'skillsTitle'
       'skillsContent'
       'footer';
+  }
+  .logo {
+    top: 0;
+  }
+  .projectsDiv {
+    margin-top: 3.5rem;
   }
 }
