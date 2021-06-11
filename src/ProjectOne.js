@@ -11,7 +11,7 @@ const ProjectOne = () => {
              </div>
 
              <div className="card__back1">
-               <p className="card__body1">This would be some longer text that gives a description of the things from the other side I guess</p>
+               <p className="card__body1">My first project. Built with Javascript, HTML and CSS.  Utilizing JQUERY and JQUERY UI libraries. Deployed on Github Pages.</p>
              </div>
 
         </div>

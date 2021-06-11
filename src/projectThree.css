@@ -99,8 +99,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-blend-mode: overlay;
+  background-blend-mode: darken;
   /* border: solid .5em #f148fb; */
-
-  color: #f148fb;
+  font-weight: bold;
+  color: white;
 }

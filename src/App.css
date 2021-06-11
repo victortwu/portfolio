@@ -8,10 +8,12 @@
    /* background: linear-gradient(#4E65FF, #92EFFD),
                 linear-gradient(#4E65FF, #011ffd); */
    /* background: linear-gradient(#3b27ba,#652ec7, #560a86); */
-   background: linear-gradient(#ff8b3d,#ff9d5c, #ffaf7a);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
+   /* background: white; */
+   background-image: linear-gradient(to right, #ff8b3d,#ff9d5c, #ffaf7a, #fbb006,#fa5f09, #ce2304);
+   background-size: 400%;
+   /* background-repeat: no-repeat;
+   background-position: center center; */
+   animation: background-effect 15s infinite alternate;
 }
 
 .darkMode {
@@ -48,6 +50,7 @@
   position: fixed;
   top: 40%;
   z-index: 1;
+  animation: drop-in 2s;
 }
 
 .logo > h1 {
@@ -55,7 +58,7 @@
   font-family: 'Lobster', cursive;
   padding-top: .2em;
   text-shadow: 0em 0em .07em #08f7fe;
-  animation: fade-in 3s;
+  animation: fade-in 1s;
 }
 
 
@@ -178,6 +181,18 @@
   color: #08f7fe;
 }
 
+#backgroundBtn {
+  background: rgba(255,255,255,.3);
+  border: solid 1px #08f7fe;
+  color: #08f7fe;
+  border-radius: .2em;
+}
+
+#backgroundBtn:hover {
+  background: rgba(255,255,255,.8);
+  cursor: pointer;
+  transition: 1s;
+}
 
 
 footer {
@@ -189,8 +204,15 @@ footer {
   border-radius: .5em;
 }
 
+@keyframes drop-in {
+  0% { top: 0%; }
+  100% { top: 40%; }
+}
 
-
+@keyframes background-effect {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
 
 @keyframes fade-in {
   0%   { opacity: 0; }

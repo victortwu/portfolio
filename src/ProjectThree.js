@@ -6,12 +6,12 @@ const ProjectThree = () => {
       <div className="card__content3">
 
              <div className="card__front3">
-               <h3 className="card__title3">project 3</h3>
-               <p className="card__subtitle3">project 3</p>
+               <h3 className="card__title3">DASHBOARD</h3>
+               <p className="card__subtitle3">CUSTOM RESTAURANT</p>
              </div>
 
              <div className="card__back3">
-               <p className="card__body3">This would be some longer text that gives a description of the things from the other side I guess</p>
+               <p className="card__body3">Built with REACT.JS and FLASK.  Utilizing PEEWEE ORM and a PosgreSQL database.  CSS3 is from scratch, no styling libraries.  And of course JavaScript and Python. Deployed on Heroku.</p>
              </div>
 
         </div>

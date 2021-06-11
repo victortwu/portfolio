@@ -6,12 +6,12 @@ const ProjectTwo = () => {
       <div className="card__content2">
 
              <div className="card__front2">
-               <h3 className="card__title2">PROJECT 2</h3>
-               <p className="card__subtitle2">project 2</p>
+               <h3 className="card__title2">RESTAURANT APP</h3>
+               <p className="card__subtitle2">Express.js</p>
              </div>
 
              <div className="card__back2">
-               <p className="card__body2">This would be some longer text that gives a description of the things from the other side I guess</p>
+               <p className="card__body2">Built in NODE.JS, with EXPRESS.JS and utilizing MONGOOSE ODM and connecting to a MONGO Database. Mostly from scratch CSS.  JavaScript and EJS templates to render. Deployed on Heroku.</p>
              </div>
 
         </div>
