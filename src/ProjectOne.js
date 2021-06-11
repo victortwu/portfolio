@@ -3,7 +3,7 @@ import './projectOne.css'
 const ProjectOne = () => {
     return(
       <a href='https://victortwu.github.io/GAproject1/' target='none'><div className='projectCard1'>
-      <div class="card__content1">
+      <div className="card__content1">
 
              <div className="card__front1">
                <h3 className="card__title1">COUNTING GAME</h3>

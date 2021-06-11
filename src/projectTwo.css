@@ -38,12 +38,10 @@
   padding: 5em 2em;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-
   display: grid;
   align-content: center;
-
-  border: solid .5em #39FF14;
-  box-shadow: inset 0 0 0.5em 0 #39FF14, 0 0 0.5em 0 #39FF14;
+  /* border: solid .2em #f148fb; */
+  box-shadow: 0 0 0.7em #f148fb;
   border-radius: .5em;
 }
 
@@ -56,7 +54,7 @@
   background-blend-mode: overlay;
   /* border: solid .5em #f148fb; */
 
-  color: #39FF14;
+  color: #f148fb;
 }
 
 .card__front2::before {
@@ -108,5 +106,5 @@
   background-blend-mode: overlay;
   /* border: solid .5em #f148fb; */
 
-  color: #39FF14;
+  color: #f148fb;
 }

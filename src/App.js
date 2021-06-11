@@ -15,13 +15,13 @@ class App extends Component {
 
 toggleDarkMode = () => {
   this.setState({
-    lightMode: true
+    lightMode: false
   })
 }
 
 toggleLightMode = () => {
   this.setState({
-    lightMode: false
+    lightMode: true
   })
 }
 
@@ -29,20 +29,14 @@ toggleLightMode = () => {
 render() {
       console.log(this.state.lightMode)
 
-      const toggleBackGround = this.state.lightMode ? 'lightMode' : 'darkMode'
+      const toggleBackGround = !this.state.lightMode ? 'lightMode' : 'darkMode'
 
 
       return (
 
       <main className={toggleBackGround}>
       <div className='mainContainer'>
-                  <div className='topSpacer'>
-                  {
-                    !this.state.lightMode
-                    ? <button onClick={()=> this.toggleDarkMode()}>Bright Mode</button>
-                    : <button onClick={()=> this.toggleLightMode()}>Dark Mode</button>
-                  }
-                  </div>
+                
 
 
 
@@ -50,7 +44,12 @@ render() {
                       <div className='logo'>
                       <nav>
                             <div className='navDiv'>
+                            {
+                              !this.state.lightMode
+                              ? <button onClick={()=> this.toggleLightMode()}>Dark Mode</button>
+                              : <button onClick={()=> this.toggleDarkMode()}>Bright Mode</button>
 
+                            }
                                 <h5 id='githubLink'><a href='https://github.com/victortwu' target='none'>GitHub</a></h5>
                                 <h5 id='linkedInLink'><a href='https://www.linkedin.com/in/victor-twu-6292631b1/' target='none'>LinkedIn</a></h5>
                                 <h5 id='resumeLink'><a href='https://docs.google.com/document/d/17n-inD_l5K_zb6C8aknWffRcIbdIMsC7_K1dTo6vpYM/edit?usp=sharing' target='none'>Resume</a></h5>
@@ -71,15 +70,14 @@ render() {
                             </tr>
                           </tbody>
                         </table>
+
                       </div>
                   </div>
 
-            <div className='projectHeading'>
 
-            </div>
 
             <div className='projectsDiv'>
-            <h3>featured projects</h3>
+            <h3 id='featuredProjects'>FEATURED PROJECTS</h3>
                 <div className='proj1Div'>
                   <ProjectOne/>
                 </div>
@@ -94,9 +92,7 @@ render() {
 
 
 
-                <div className='aboutTitle'>
 
-                </div>
                 <div className='aboutContent'>
                   <h4 id='about'>ABOUT</h4>
                   <p>Full stack software engineer and restaurateur with frontend and backend experience.  Will steward data from third parties such as UberEats, Doordash to the restaurant owner's bookeeping system.</p>
@@ -104,12 +100,10 @@ render() {
                 </div>
 
 
-              <div className='skillsTitle'>
 
-              </div>
 
               <div className='skillsContent'>
-                <h4>SKILLS</h4>
+                <h4 id='skillsHeading'>SKILLS</h4>
                 <p>Some skills and stuff</p>
               </div>
 
