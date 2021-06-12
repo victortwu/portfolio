@@ -72,7 +72,7 @@
 .aboutContent {
   grid-area: aboutContent;
   margin-top: 2rem;
-  background: rgba(255,255,255,.7);
+  background: rgba(255,255,255,.5);
   margin: auto;
   width: 85%;
   height: 25rem;
@@ -89,7 +89,7 @@
 .skillsContent {
   grid-area: skillsContent;
   margin-top: 2rem;
-  background: rgba(255,255,255,.7);
+  background: rgba(255,255,255,.5);
   margin: auto;
   width: 85%;
   height: 25rem;
@@ -199,6 +199,10 @@ footer {
   grid-area: footer;
   margin-top: 15rem;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
   box-shadow: 0 0 0.3em rgba(0,0,0,.5);
   border: solid 1px white;
   border-radius: .5em;
@@ -222,7 +226,7 @@ footer {
 @media only screen and (max-width:500px) {
   .mainContainer {
     grid-template-columns: 1fr;
-    grid-template-rows:  0.5fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 0.2fr;
+    grid-template-rows:  0.5fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 0.5fr;
     grid-template-areas:
       'titleLogo'
       'projectsDiv'
