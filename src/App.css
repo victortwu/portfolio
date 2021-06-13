@@ -49,7 +49,7 @@
 .logo {
   position: fixed;
   top: 40%;
-  z-index: 1;
+  /* z-index: 1; */
   animation: drop-in 2s;
 }
 
@@ -129,6 +129,7 @@
   margin: auto;
   margin-top: 2rem;
   width: 85%;
+
 }
 
 .secondHeading {
@@ -194,6 +195,30 @@
   transition: 1s;
 }
 
+.showForm {
+  display: block;
+}
+
+.hideForm {
+  display: none;
+}
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0,0,0,0.7);
+  animation: fade-in 1s;
+}
+
+.submitFormCnt {
+  margin: auto;
+
+}
 
 footer {
   grid-area: footer;

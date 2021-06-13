@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import './App.css';
 import TextLoop from 'react-text-loop'
-import ProjectOne from './ProjectOne'
-import ProjectTwo from './ProjectTwo'
-import ProjectThree from './ProjectThree'
+import ProjectOne from './components/ProjectOne'
+import ProjectTwo from './components/ProjectTwo'
+import ProjectThree from './components/ProjectThree'
+import ContactForm from './components/ContactForm'
 
 class App extends Component {
   constructor(props) {
     super(props)
       this.state = {
-        lightMode: false
+        lightMode: false,
+        showForm: false
       }
     }
 
@@ -25,6 +27,17 @@ toggleLightMode = () => {
   })
 }
 
+showContactForm = () => {
+  this.setState({
+    showForm: true
+  })
+}
+
+hideContactForm = () => {
+  this.setState({
+    showForm: false
+  })
+}
 
 render() {
       console.log(this.state.lightMode)
@@ -123,9 +136,9 @@ render() {
               </div>
 
 
-
+              <ContactForm showForm={this.state.showForm} hideContactForm={this.hideContactForm}/>
             <footer>
-              <p>BUILT BY VICTOR TWU 2021</p><p>CONTACT ME</p>
+              <p>BUILT BY VICTOR TWU 2021</p><p onClick={()=> this.showContactForm()}>CONTACT ME</p>
             </footer>
 
 
