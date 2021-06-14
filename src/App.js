@@ -81,6 +81,10 @@ render() {
                                     </span></h3>
                               </td>
                             </tr>
+                            <tr>
+                              <td id='contactMe'><button onClick={()=> this.showContactForm()} >Contact Me</button></td>
+
+                            </tr>
                           </tbody>
                         </table>
 
@@ -138,7 +142,7 @@ render() {
 
               <ContactForm showForm={this.state.showForm} hideContactForm={this.hideContactForm}/>
             <footer>
-              <p>BUILT BY VICTOR TWU 2021</p><p onClick={()=> this.showContactForm()}>CONTACT ME</p>
+              <p>BUILT BY VICTOR TWU 2021</p><p id='contactLinkFooter' onClick={()=> this.showContactForm()}>CONTACT ME</p>
             </footer>
 
 
