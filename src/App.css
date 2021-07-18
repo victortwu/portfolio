@@ -327,6 +327,7 @@ footer {
   }
   .logo {
     top: 0;
+    animation: none;
   }
   .logo > h1 {
     font-size: 4rem;
