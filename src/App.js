@@ -113,7 +113,7 @@ render() {
 
                 <div className='aboutContent'>
                   <h4 id='about'>ABOUT ME</h4>
-                  <p>Full stack software engineer and restaurateur with frontend and backend experience.  Will steward data from third parties such as UberEats, Doordash to the restaurant owner's bookeeping system.</p>
+                  <p>Front end software engineer and restaurateur with full stack experience.  Will bring creativity, adaptability and hard work. Will steward data from third parties such as UberEats, GrubHub to the restaurant owner's bookeeping system.</p>
                   <p>I built my restaurant during the 2008 financial crisis and am surviving the restaurant through a global pandemic - a testament to my grit, determination, adaptability and even-tempered leadership. I bring strong people skills, business savvy and a forward thinking attitude. </p>
                 </div>
 
@@ -123,12 +123,12 @@ render() {
               <div className='skillsContent'>
                 <h4 id='skillsHeading'>SKILLS</h4>
                 <ul>
-                  <li>Fullstack Software Developement</li>
+                  <li>Front End Software Developer</li>
                   <li>Business Leader</li>
+                  <li>React.js</li>
                   <li>JavaScript</li>
                   <li>CSS</li>
                   <li>Python</li>
-                  <li>React.js</li>
                   <li>Node.js</li>
                   <li>Express.js</li>
                   <li>Mongoose</li>

@@ -36,6 +36,7 @@
     "titleLogo titleLogo skillsContent skillsContent"
     "footer footer footer footer";
   grid-gap: 1rem;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 .topSpacer {
