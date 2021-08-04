@@ -4,6 +4,7 @@ import TextLoop from 'react-text-loop'
 import ProjectOne from './components/ProjectOne'
 import ProjectTwo from './components/ProjectTwo'
 import ProjectThree from './components/ProjectThree'
+import ProjectFour from './components/ProjectFour'
 import ContactForm from './components/ContactForm'
 
 class App extends Component {
@@ -97,6 +98,9 @@ render() {
             <h3 id='featuredProjects'>FEATURED PROJECTS</h3>
                 <div className='proj3Div'>
                   <ProjectThree/>
+                </div>
+                <div className='proj4Div'>
+                  <ProjectFour/>
                 </div>
                 <div className='proj1Div'>
                   <ProjectOne/>

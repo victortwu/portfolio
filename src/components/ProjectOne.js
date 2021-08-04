@@ -1,6 +1,9 @@
 import '../projectOne.css'
 
 const ProjectOne = () => {
+
+
+
     return(
       <a href='https://victortwu.github.io/GAproject1/' target='none'><div className='projectCard1'>
       <div className="card__content1">
