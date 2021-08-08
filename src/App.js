@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import './App.css';
 import TextLoop from 'react-text-loop'
-import ProjectOne from './components/ProjectOne'
-import ProjectTwo from './components/ProjectTwo'
-import ProjectThree from './components/ProjectThree'
-import ProjectFour from './components/ProjectFour'
 import ContactForm from './components/ContactForm'
+import TrexProject from './components/TrexProject'
+import BaseballScoreProj from './components/BaseballScoreProj'
+import CustomDashboardProj from './components/CustomDashboardProj'
+import RestaurantAppProj from './components/RestaurantAppProj'
 
 class App extends Component {
   constructor(props) {
@@ -97,16 +97,24 @@ render() {
             <div className='projectsDiv'>
             <h3 id='featuredProjects'>FEATURED PROJECTS</h3>
                 <div className='proj3Div'>
-                  <ProjectThree/>
+                  <CustomDashboardProj
+                    content={<p>Built with REACT.JS and FLASK.  Utilizing PEEWEE ORM and a PosgreSQL database.  CSS3 is from scratch, no styling libraries.  And of course JavaScript and Python. Deployed on Heroku.</p>}
+                  />
                 </div>
                 <div className='proj4Div'>
-                  <ProjectFour/>
+                  <BaseballScoreProj
+                    content={<p>React.js baseball scores app.  Responsive mobile first design featuring animated hambuger nav.  From scratch CSS with no libraries.  Biased towards my home team, the Mariners. Home screen will render home team score. Standings page features home division first. You could have your home team too!</p>}
+                  />
                 </div>
                 <div className='proj1Div'>
-                  <ProjectOne/>
+                  <TrexProject
+                    content={<p>My first project. Built with Javascript, HTML and CSS.  Utilizing JQUERY and JQUERY UI libraries. Deployed on Github Pages.</p>}
+                  />
                 </div>
                 <div className='proj2Div'>
-                  <ProjectTwo/>
+                  <RestaurantAppProj
+                    content={<p>Built in NODE.JS, with EXPRESS.JS and utilizing MONGOOSE ODM and connecting to a MONGO Database. Mostly from scratch CSS.  JavaScript and EJS templates to render. Deployed on Heroku.</p>}
+                  />
                 </div>
 
             </div>

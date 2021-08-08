@@ -3,17 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root {
-  --level-one: translateZ(3rem);
-  --level-two: translateZ(6rem);
-  --level-three: translateZ(9rem);
 
-  --fw-normal: 400;
-  --fw-bold: 700;
-
-  --clr: #dadae0;
 }
 
-*, *::before, *::after {
+
+*{
   box-sizing: border-box;
   margin: 0;
 }
@@ -28,7 +22,7 @@
    background-size: 400%;
    /* background-repeat: no-repeat;
    background-position: center center; */
-   animation: background-effect 15s infinite alternate;
+   animation: background-effect 6s forwards;
 }
 
 .darkMode {
@@ -66,7 +60,7 @@
   position: fixed;
   top: 40%;
   /* z-index: 1; */
-  animation: drop-in 2s;
+  animation: drop-in 1s ease-in;
 }
 
 .logo > h1 {
@@ -91,14 +85,15 @@
 #contactMe > button:hover {
   background: rgba(255,255,255,.8);
   cursor: pointer;
-  transition: 1s;
+  transition: .5s;
 }
 
 /* ======== PROJECT CARDS ======== */
 .proj1Div, .proj2Div, .proj3Div, .proj4Div {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-
 
 
 
