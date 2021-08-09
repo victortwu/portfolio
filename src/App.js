@@ -2,10 +2,8 @@ import React, { Component } from 'react'
 import './App.css';
 import TextLoop from 'react-text-loop'
 import ContactForm from './components/ContactForm'
-import TrexProject from './components/TrexProject'
-import BaseballScoreProj from './components/BaseballScoreProj'
-import CustomDashboardProj from './components/CustomDashboardProj'
-import RestaurantAppProj from './components/RestaurantAppProj'
+import Projects from './components/Projects'
+
 
 class App extends Component {
   constructor(props) {
@@ -95,44 +93,17 @@ render() {
 
 
             <div className='projectsDiv'>
-            <h3 id='featuredProjects'>FEATURED PROJECTS</h3>
-                <div className='proj3Div'>
-                  <CustomDashboardProj
-                    content={<p>Built with REACT.JS and FLASK.  Utilizing PEEWEE ORM and a PosgreSQL database.  CSS3 is from scratch, no styling libraries.  And of course JavaScript and Python. Deployed on Heroku.</p>}
-                  />
-                </div>
-                <div className='proj4Div'>
-                  <BaseballScoreProj
-                    content={<p>React.js baseball scores app.  Responsive mobile first design featuring animated hambuger nav.  From scratch CSS with no libraries.  Biased towards my home team, the Mariners. Home screen will render home team score. Standings page features home division first. You could have your home team too!</p>}
-                  />
-                </div>
-                <div className='proj1Div'>
-                  <TrexProject
-                    content={<p>My first project. Built with Javascript, HTML and CSS.  Utilizing JQUERY and JQUERY UI libraries. Deployed on Github Pages.</p>}
-                  />
-                </div>
-                <div className='proj2Div'>
-                  <RestaurantAppProj
-                    content={<p>Built in NODE.JS, with EXPRESS.JS and utilizing MONGOOSE ODM and connecting to a MONGO Database. Mostly from scratch CSS.  JavaScript and EJS templates to render. Deployed on Heroku.</p>}
-                  />
-                </div>
-
+              <h2 id='featuredProjects'>FEATURED PROJECTS</h2>
+                  <Projects/>
             </div>
 
-
-
-
-
-                <div className='aboutContent'>
+            <div className='aboutContent'>
                   <h4 id='about'>ABOUT ME</h4>
                   <p>Front end software engineer and restaurateur with full stack experience.  Will bring creativity, adaptability and hard work. Will steward data from third parties such as UberEats, GrubHub to the restaurant owner's bookeeping system.</p>
                   <p>I built my restaurant during the 2008 financial crisis and am surviving the restaurant through a global pandemic - a testament to my grit, determination, adaptability and even-tempered leadership. I bring strong people skills, business savvy and a forward thinking attitude. </p>
-                </div>
+            </div>
 
-
-
-
-              <div className='skillsContent'>
+            <div className='skillsContent'>
                 <h4 id='skillsHeading'>SKILLS</h4>
                 <ul>
                   <li>Front End Software Developer</li>
@@ -153,11 +124,10 @@ render() {
 
 
               <ContactForm showForm={this.state.showForm} hideContactForm={this.hideContactForm}/>
+
             <footer>
               <p>BUILT BY VICTOR TWU 2021</p><p id='contactLinkFooter' onClick={()=> this.showContactForm()}>CONTACT ME</p>
             </footer>
-
-
 
             </div>
         </main>
@@ -165,11 +135,5 @@ render() {
       )
     }
   }
-
-
-
-
-
-
 
 export default App;

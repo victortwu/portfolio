@@ -89,12 +89,16 @@
 }
 
 /* ======== PROJECT CARDS ======== */
-.proj1Div, .proj2Div, .proj3Div, .proj4Div {
+/* .proj1Div, .proj2Div, .proj3Div, .proj4Div {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+} */
+.projectsDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 
 
 
@@ -243,12 +247,12 @@
   display: flex;
   justify-content: space-around;
   background: rgba(0,0,0,0.7);
-  animation: fade-in 1s;
+  animation: fade-in .5s;
 }
 
 .submitFormCnt {
   text-align: center;
-  background: rgba(10, 75, 255, .5);
+  background: rgba(227, 82, 9, .7);
   padding: 1rem;
   width: 75%;
   margin: auto;

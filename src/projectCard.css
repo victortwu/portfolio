@@ -3,28 +3,88 @@ li {
 }
 
 #projTitle {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  background-color: rgba(255,255,255,.4);
-  color: #f148fb;
-  border-radius: 5px;
+  /* margin-left: 1.5rem;
+  margin-right: 1.5rem; */
+
+  color: #08f7fe;
+
 }
 
 .flipCardContainer {
   text-align: center;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-.wholeCard {
-  margin-top: 3rem;
+.wholeCard0 {
+  margin-top: .5rem;
   margin-bottom: 1rem;
   position: relative;
   width: 20rem;
   height: 20rem;
   transform-style: preserve-3d;
+}
+
+.wholeCardFlip0 {
+  animation: flip 1.5s forwards
+}
+
+.wholeCardFlipBack0 {
+  animation: flipBack 1.5s forwards
+}
+
+.wholeCard1 {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  transform-style: preserve-3d;
+}
+
+.wholeCardFlip1 {
+  animation: flip 1.5s forwards
+}
+
+.wholeCardFlipBack1 {
+  animation: flipBack 1.5s forwards
+}
+
+.wholeCard2 {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  transform-style: preserve-3d;
+}
+
+.wholeCardFlip2 {
+  animation: flip 1.5s forwards
+}
+
+.wholeCardFlipBack2 {
+  animation: flipBack 1.5s forwards
+}
+
+.wholeCard3 {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  transform-style: preserve-3d;
+}
+
+.wholeCardFlip3 {
+  animation: flip 1.5s forwards
+}
+
+.wholeCardFlipBack3 {
+  animation: flipBack 1.5s forwards
 }
 
 .frontPanel, .backPanel {
@@ -50,6 +110,7 @@ li {
 }
 
 #cardButtonUl {
+  margin-top: -0.5rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -60,10 +121,11 @@ li {
 }
 
 #projectLink, #flipButton {
+  height: 1.5rem;
   padding: .2em;
-  /* background: rgba(255,255,255,.3); */
-  border: solid 1px #08f7fe;
+  /* border: solid 1px #08f7fe; */
   font-family: sans-serif;
+
   color: #08f7fe;
   border-radius: .2em;
 }
