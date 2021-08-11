@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root {
-
+  --neonBlue: #08f7fe;
+  --darkGray: #40464a;
 }
 
 
@@ -109,15 +110,20 @@
   background: rgba(255,255,255,.5);
   margin: auto;
   width: 85%;
-  height: 25rem;
+  height: 30rem;
   padding: 2rem;
   display:flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   box-shadow: 0 0 0.7em #f148fb;
   border-radius: .5em;
+  font-family: sans-serif;
+  color: var(--darkGray);
 }
 
+.aboutContent > p {
+  margin: 1rem;
+}
 
 
 .skillsContent {
@@ -133,6 +139,12 @@
   justify-content: space-evenly;
   box-shadow: 0 0 0.7em #f148fb;
   border-radius: .5em;
+  font-family: sans-serif;
+  color: var(--darkGray);
+}
+
+.skillsContent > ul > li {
+  margin-top: .3em;
 }
 
 
@@ -178,11 +190,11 @@
 
 #twu, #software {
   text-shadow: 0em 0em .05em white;
-  color: #08f7fe;
+  color: var(--neonBlue);
 }
 
 #skills {
-  color: #f148fb;
+  color: var(--neonBlue);
 }
 
 #textLoopCell {
@@ -190,7 +202,7 @@
   float: right;
   padding-left: .5em;
 
-  text-shadow: .0em .0em .4em white;
+  /* text-shadow: .0em .0em .4em white; */
 }
 
 .navDiv {
@@ -201,9 +213,9 @@
 }
 
 .navDiv > h5 > a {
-  color: #f148fb;
+  color: var(--neonBlue);
   text-decoration: none;
-  text-shadow: 0em 0em .1em white
+  /* text-shadow: 0em 0em .1em white */
 }
 
 .navDiv > h5:hover {
@@ -214,7 +226,7 @@
 
 #about, #featuredProjects, #skillsHeading {
   font-family: Fjalla One;
-  color: #08f7fe;
+  color: var(--neonBlue);
 }
 
 #backgroundBtn {

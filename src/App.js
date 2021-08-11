@@ -41,7 +41,7 @@ hideContactForm = () => {
 render() {
       console.log(this.state.lightMode)
 
-      const toggleBackGround = !this.state.lightMode ? 'lightMode' : 'darkMode'
+      const toggleBackGround = !this.state.lightMode ? 'darkMode' : 'lightMode'
 
 
       return (
@@ -58,8 +58,8 @@ render() {
                             <div className='navDiv'>
                             {
                               !this.state.lightMode
-                              ? <button id='backgroundBtn' onClick={()=> this.toggleLightMode()}>Dark Mode</button>
-                              : <button id='backgroundBtn' onClick={()=> this.toggleDarkMode()}>Bright Mode</button>
+                              ? <button id='backgroundBtn' onClick={()=> this.toggleLightMode()}>Bright Mode</button>
+                              : <button id='backgroundBtn' onClick={()=> this.toggleDarkMode()}>Dark Mode</button>
 
                             }
                                 <h5 id='githubLink'><a href='https://github.com/victortwu' target='none'>GitHub</a></h5>

@@ -106,6 +106,7 @@ li {
 .backPanel {
   transform: rotateY(.5turn);
   background-color: #4a4d5e;
+  font-family: sans-serif;
   color: white;
 }
 
