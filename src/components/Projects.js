@@ -52,9 +52,12 @@ const toggleClass3 = flipCard3 ? 'wholeCard3 wholeCardFlip3' : 'wholeCard3 whole
 
       return(
         <div key={i} className='flipCardContainer'>
-          <h3 id='projTitle'>{project.title}</h3>
+
           <div className={uniqueClass}>
             <div className='frontPanel' style={style}>
+            <h3 id='projTitle'>{project.title}</h3>
+
+
 
             </div>
             <div className='backPanel'>
