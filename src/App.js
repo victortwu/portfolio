@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
+
 import TextLoop from 'react-text-loop'
 import ContactForm from './components/ContactForm'
 import ProjectZero from './components/ProjectZero'
