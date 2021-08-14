@@ -21,7 +21,7 @@ li {
 
 
 
-.wholeCard0 {
+.wholeCard {
   margin-top: .5rem;
   margin-bottom: 1rem;
   position: relative;
@@ -30,11 +30,11 @@ li {
   transform-style: preserve-3d;
 }
 
-.wholeCardFlip0 {
+.wholeCardFlip {
   animation: flip 1.5s forwards
 }
 
-.wholeCardFlipBack0 {
+.wholeCardFlipBack {
   animation: flipBack 1.5s forwards
 }
 

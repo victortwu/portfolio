@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import './App.css';
 import TextLoop from 'react-text-loop'
 import ContactForm from './components/ContactForm'
-import Projects from './components/Projects'
+import ProjectZero from './components/ProjectZero'
+import ProjectOne from './components/ProjectOne'
+import ProjectTwo from './components/ProjectTwo'
+import ProjectThree from './components/ProjectThree'
 
 
 class App extends Component {
@@ -94,7 +97,11 @@ render() {
 
             <div className='projectsDiv'>
               <h2 id='featuredProjects'>FEATURED PROJECTS</h2>
-                  <Projects/>
+                  <ProjectZero/>
+                  <ProjectOne/>
+                  <ProjectTwo/>
+                  <ProjectThree/>
+
             </div>
 
             <div className='aboutContent'>
