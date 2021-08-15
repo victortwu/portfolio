@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import './App.css';
 
 import TextLoop from 'react-text-loop'
@@ -9,69 +9,51 @@ import ProjectTwo from './components/ProjectTwo'
 import ProjectThree from './components/ProjectThree'
 
 
-class App extends Component {
-  constructor(props) {
-    super(props)
-      this.state = {
-        lightMode: false,
-        showForm: false
-      }
+const App = () => {
+
+  const [lightMode, setLightMode] = useState(false)
+  const [showForm, setShowForm] = useState(false)
+
+    const toggleDarkMode = () => {
+      setLightMode(true)
     }
 
-toggleDarkMode = () => {
-  this.setState({
-    lightMode: false
-  })
-}
+    const toggleLightMode = () => {
+      setLightMode(false)
+    }
 
-toggleLightMode = () => {
-  this.setState({
-    lightMode: true
-  })
-}
+    const showContactForm = () => {
+      setShowForm(true)
+    }
 
-showContactForm = () => {
-  this.setState({
-    showForm: true
-  })
-}
+    const hideContactForm = () => {
+      setShowForm(false)
+    }
 
-hideContactForm = () => {
-  this.setState({
-    showForm: false
-  })
-}
-
-render() {
-      console.log(this.state.lightMode)
-
-      const toggleBackGround = !this.state.lightMode ? 'darkMode' : 'lightMode'
+  const toggleBackGround = !lightMode ? 'darkMode' : 'lightMode'
 
 
-      return (
+  return (
 
-      <main className={toggleBackGround}>
+    <main className={toggleBackGround}>
       <div className='mainContainer'>
 
+        <div className='titleLogo'>
+            <div className='logo'>
+                <nav>
+                  <div className='navDiv'>
+                      {
+                        !lightMode
+                        ? <button id='backgroundBtn' onClick={()=> toggleLightMode()}>Bright Mode</button>
+                        : <button id='backgroundBtn' onClick={()=> toggleDarkMode()}>Dark Mode</button>
+                      }
+                        <h5 id='githubLink'><a href='https://github.com/victortwu' target='none'>GitHub</a></h5>
+                        <h5 id='linkedInLink'><a href='https://www.linkedin.com/in/victor-twu/' target='none'>LinkedIn</a></h5>
+                        <h5 id='resumeLink'><a href='https://docs.google.com/document/d/17n-inD_l5K_zb6C8aknWffRcIbdIMsC7_K1dTo6vpYM/edit?usp=sharing' target='none'>Resume</a></h5>
+                    </div>
+                  </nav>
 
-
-
-                  <div className='titleLogo'>
-                      <div className='logo'>
-                      <nav>
-                            <div className='navDiv'>
-                            {
-                              !this.state.lightMode
-                              ? <button id='backgroundBtn' onClick={()=> this.toggleLightMode()}>Bright Mode</button>
-                              : <button id='backgroundBtn' onClick={()=> this.toggleDarkMode()}>Dark Mode</button>
-
-                            }
-                                <h5 id='githubLink'><a href='https://github.com/victortwu' target='none'>GitHub</a></h5>
-                                <h5 id='linkedInLink'><a href='https://www.linkedin.com/in/victor-twu/' target='none'>LinkedIn</a></h5>
-                                <h5 id='resumeLink'><a href='https://docs.google.com/document/d/17n-inD_l5K_zb6C8aknWffRcIbdIMsC7_K1dTo6vpYM/edit?usp=sharing' target='none'>Resume</a></h5>
-                            </div>
-                        </nav>
-                        <h1><span id='victor'>Victor</span><span id='twu'>Twu</span></h1>
+                  <h1><span id='victor'>Victor</span><span id='twu'>Twu</span></h1>
                         <table className='secondHeading'>
                           <tbody>
                             <tr>
@@ -85,25 +67,24 @@ render() {
                               </td>
                             </tr>
                             <tr>
-                              <td id='contactMe'><button onClick={()=> this.showContactForm()} >Contact Me</button></td>
+                              <td id='contactMe'><button onClick={()=> showContactForm()} >Contact Me</button></td>
 
                             </tr>
                           </tbody>
                         </table>
 
-                      </div>
-                  </div>
+                    </div>
+                </div>
 
 
 
-            <div className='projectsDiv'>
-              <h2 id='featuredProjects'>FEATURED PROJECTS</h2>
+        <div className='projectsDiv'>
+            <h2 id='featuredProjects'>FEATURED PROJECTS</h2>
                   <ProjectZero/>
                   <ProjectOne/>
                   <ProjectTwo/>
                   <ProjectThree/>
-
-            </div>
+        </div>
 
             <div className='aboutContent'>
                   <h4 id='about'>ABOUT ME</h4>
@@ -131,17 +112,17 @@ render() {
               </div>
 
 
-              <ContactForm showForm={this.state.showForm} hideContactForm={this.hideContactForm}/>
+              <ContactForm showForm={showForm} hideContactForm={hideContactForm}/>
 
             <footer>
-              <p>BUILT BY VICTOR TWU 2021</p><p id='contactLinkFooter' onClick={()=> this.showContactForm()}>CONTACT ME</p>
+              <p>BUILT BY VICTOR TWU 2021</p><p id='contactLinkFooter' onClick={()=> showContactForm()}>CONTACT ME</p>
             </footer>
 
             </div>
         </main>
 
       )
-    }
+
   }
 
 export default App;
