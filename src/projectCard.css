@@ -38,56 +38,10 @@ li {
   animation: flipBack 1.5s forwards
 }
 
-.wholeCard1 {
-  margin-top: .5rem;
-  margin-bottom: 1rem;
-  position: relative;
-  width: 20rem;
-  height: 20rem;
-  transform-style: preserve-3d;
-}
 
-.wholeCardFlip1 {
-  animation: flip 1.5s forwards
-}
 
-.wholeCardFlipBack1 {
-  animation: flipBack 1.5s forwards
-}
 
-.wholeCard2 {
-  margin-top: .5rem;
-  margin-bottom: 1rem;
-  position: relative;
-  width: 20rem;
-  height: 20rem;
-  transform-style: preserve-3d;
-}
 
-.wholeCardFlip2 {
-  animation: flip 1.5s forwards
-}
-
-.wholeCardFlipBack2 {
-  animation: flipBack 1.5s forwards
-}
-
-.wholeCard3 {
-  margin-top: .5rem;
-  margin-bottom: 1rem;
-  position: relative;
-  width: 20rem;
-  height: 20rem;
-  transform-style: preserve-3d;
-}
-
-.wholeCardFlip3 {
-  animation: flip 1.5s forwards
-}
-
-.wholeCardFlipBack3 {
-  animation: flipBack 1.5s forwards
-}
 
 .frontPanel, .backPanel {
   position: absolute;
@@ -113,14 +67,15 @@ li {
   color: white;
 }
 
-#cardButtonUl {
+.cardButtonContainer {
   margin-top: -0.5rem;
+
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-#cardButtonUl > a {
+.cardButtonContainer > a {
   text-decoration: none;
 }
 

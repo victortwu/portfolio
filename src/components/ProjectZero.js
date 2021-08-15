@@ -1,26 +1,16 @@
 import React, { useState } from 'react'
 import '../projectCard.css'
-import projects from '../data/projects'
+import createProjectData from '../data/dataObject'
+import createInlineStyle from '../data/styleObject'
 
 const ProjectZero =()=> {
 
   const [flipCard, setFlipCard] = useState(false)
 
-  const projectIndex = 0
+  const projectData = createProjectData(0)
 
-  const projectData = {
-    title: projects[projectIndex].title,
-    image: projects[projectIndex].image,
-    link: projects[projectIndex].link,
-    content: projects[projectIndex].content,
-  }
+  const style = createInlineStyle(projectData.image)
 
-    const style = {
-      backgroundImage: projectData.image,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center center'
-    }
 
     const flipOver =()=> {
       setFlipCard(true)
@@ -43,18 +33,18 @@ const ProjectZero =()=> {
         </div>
 
         <div className='backPanel'>
-          {projectData.content}
+          {projectData.description}
         </div>
 
       </div>
 
-      <ul id='cardButtonUl'>
+      <div className='cardButtonContainer'>
         <a href={projectData.link} target='none'><li id='projectLink'>View Project</li></a>
         {
           flipCard ? <li id='flipButton' onClick={()=> flipBack()}>Flip Back</li>
           : <li id='flipButton' onClick={()=> flipOver()}>Description</li>
         }
-      </ul>
+      </div>
 
     </div>
   )
