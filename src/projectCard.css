@@ -63,8 +63,38 @@ li {
 .backPanel {
   transform: rotateY(.5turn);
   background-color: #4a4d5e;
+  text-align: justify;
   font-family: sans-serif;
   color: white;
+}
+
+.backPanel > p {
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.techListContainer {
+  background-color: rgba(255,255,255, .1);
+  margin: 1rem;
+  text-align: center;
+  padding: .5rem;
+  box-shadow: 0 0 0.1em;
+  border-radius: .5rem;
+}
+
+.techListContainer > h4 {
+  margin-bottom: .5rem;
+}
+
+.techList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.techList > div {
+  margin: .1em;
 }
 
 .cardButtonContainer {

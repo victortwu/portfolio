@@ -7,6 +7,7 @@ const createProjectData = (projectIndex) => {
     image: projects[projectIndex].image,
     link: projects[projectIndex].link,
     description: projects[projectIndex].description,
+    tech: projects[projectIndex].tech,
   }
 }
 

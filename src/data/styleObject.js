@@ -1,4 +1,4 @@
-import projects from '../data/projects'
+
 
 const createInlineStyle = (image) => {
   return {

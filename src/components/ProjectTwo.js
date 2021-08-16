@@ -32,7 +32,19 @@ const ProjectTwo =()=> {
         </div>
 
         <div className='backPanel'>
-          {projectData.description}
+          <p>{projectData.description}</p>
+          <div className='techListContainer'>
+            <h4>Technologies Used:</h4>
+            <div className='techList'>
+            {
+              projectData.tech.map((tech, i) => {
+                return(
+                  <div key={i + tech[i]}>{tech}</div>
+                )
+              })
+            }
+            </div>
+          </div>
         </div>
 
       </div>
