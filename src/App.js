@@ -14,21 +14,9 @@ const App = () => {
   const [lightMode, setLightMode] = useState(false)
   const [showForm, setShowForm] = useState(false)
 
-    const toggleDarkMode = () => {
-      setLightMode(true)
-    }
+  const hideContactForm = () => setShowForm(false)
 
-    const toggleLightMode = () => {
-      setLightMode(false)
-    }
-
-    const showContactForm = () => {
-      setShowForm(true)
-    }
-
-    const hideContactForm = () => {
-      setShowForm(false)
-    }
+  
 
   const toggleBackGround = !lightMode ? 'darkMode' : 'lightMode'
 
@@ -44,8 +32,8 @@ const App = () => {
                   <div className='navDiv'>
                       {
                         !lightMode
-                        ? <button id='backgroundBtn' onClick={()=> toggleLightMode()}>Bright Mode</button>
-                        : <button id='backgroundBtn' onClick={()=> toggleDarkMode()}>Dark Mode</button>
+                        ? <button id='backgroundBtn' onClick={()=> setLightMode(true)}>Bright Mode</button>
+                        : <button id='backgroundBtn' onClick={()=> setLightMode(false)}>Dark Mode</button>
                       }
                         <h5 id='githubLink'><a href='https://github.com/victortwu' target='none'>GitHub</a></h5>
                         <h5 id='linkedInLink'><a href='https://www.linkedin.com/in/victor-twu/' target='none'>LinkedIn</a></h5>
@@ -67,7 +55,7 @@ const App = () => {
                               </td>
                             </tr>
                             <tr>
-                              <td id='contactMe'><button onClick={()=> showContactForm()} >Contact Me</button></td>
+                              <td id='contactMe'><button onClick={()=> setShowForm(true)} >Contact Me</button></td>
 
                             </tr>
                           </tbody>
@@ -115,7 +103,7 @@ const App = () => {
               <ContactForm showForm={showForm} hideContactForm={hideContactForm}/>
 
             <footer>
-              <p>BUILT BY VICTOR TWU 2021</p><p id='contactLinkFooter' onClick={()=> showContactForm()}>CONTACT ME</p>
+              <p>BUILT BY VICTOR TWU 2021</p><p id='contactLinkFooter' onClick={()=> setShowForm(true)}>CONTACT ME</p>
             </footer>
 
             </div>

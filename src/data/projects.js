@@ -11,7 +11,7 @@ const projects = [
     title: 'Custom Dashboard',
     image: `url(${require('../images/customdashboard.png').default})`,
     link: 'https://custom-restaurant-dashboard.herokuapp.com/',
-    description: 'Description coming soon.',
+    description: 'A custom restaurant dashboard that parses csv data from 3rd party vendors like Doordash and UberEats. Puts everything in one place, ready for excise tax returns! Also features a rather gratuitous transforming Soundwave!',
     tech: ['React.js', 'Flask/Python', 'PosgreSQL'],
   },
   {

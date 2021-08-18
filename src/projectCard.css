@@ -57,7 +57,8 @@ li {
   justify-content: space-evenly;
 
   border-radius: 1em;
-  box-shadow: 0 0 0.5em #364170;
+  /* box-shadow: 0 0 0.5em #364170; */
+  box-shadow: 0 0 0.7em #f148fb;
 }
 
 .backPanel {

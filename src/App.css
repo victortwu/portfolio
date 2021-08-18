@@ -5,6 +5,7 @@
 :root {
   --neonBlue: #08f7fe;
   --darkGray: #40464a;
+  --magenta: #f148fb;
 }
 
 
@@ -194,7 +195,7 @@
 }
 
 #skills {
-  color: var(--neonBlue);
+  color: var(--magenta);
 }
 
 #textLoopCell {
@@ -224,10 +225,16 @@
   cursor: pointer;
 }
 
-#about, #featuredProjects, #skillsHeading {
+#about, #skillsHeading {
   font-family: Fjalla One;
   color: var(--neonBlue);
 }
+
+#featuredProjects {
+  font-family: Fjalla One;
+  color: var(--magenta);
+}
+
 
 #backgroundBtn {
   background: rgba(255,255,255,.3);
