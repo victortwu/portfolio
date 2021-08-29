@@ -8,6 +8,7 @@ li {
   filter: drop-shadow(0 0 0.25rem black);
   /* color: #08f7fe; */
   color: white;
+  transform: translateZ(3rem);
 }
 
 .flipCardContainer {
@@ -38,11 +39,6 @@ li {
   animation: flipBack 1.5s forwards
 }
 
-
-
-
-
-
 .frontPanel, .backPanel {
   position: absolute;
   top: 0;
@@ -70,9 +66,9 @@ li {
 }
 
 .backPanel > p {
-
   padding-left: 1rem;
   padding-right: 1rem;
+  transform: translateZ(3rem);
 }
 
 .techListContainer {
@@ -82,6 +78,7 @@ li {
   padding: .5rem;
   box-shadow: 0 0 0.1em;
   border-radius: .5rem;
+  transform: translateZ(2rem);
 }
 
 .techListContainer > h4 {
