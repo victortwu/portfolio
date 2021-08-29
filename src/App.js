@@ -16,7 +16,7 @@ const App = () => {
 
   const hideContactForm = () => setShowForm(false)
 
-  
+
 
   const toggleBackGround = !lightMode ? 'darkMode' : 'lightMode'
 
@@ -50,7 +50,7 @@ const App = () => {
                               </td>
                               <td id='textLoopCell'>
                                     <h3><span id='skills'>
-                                      <TextLoop interval={1000} children={['JavaScript', 'Python', 'CSS3', 'React.js', 'Express.js', 'Node.js', 'MongoDB', 'PosgreSQL', 'HTML5', 'Flask']} />
+                                      <TextLoop interval={2000} children={['JavaScript', 'Python', 'React.js']} />
                                     </span></h3>
                               </td>
                             </tr>
