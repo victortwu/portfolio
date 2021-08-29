@@ -8,18 +8,18 @@ const projects = [
     tech: ['React.js', 'Baseball Api'],
   },
   {
+    title: 'Tip Calculator App - Frontend Mentor',
+    image: `url(${require('../images/tipcalcapp.png').default})`,
+    link: 'https://frontendmentor-tip-calc-vercel-xwvk4vrpd-victortwu.vercel.app/',
+    description: "A frontend challenge from frontendmentor.io. It's a tip calculator built to design specs from Frontend Mentor.",
+    tech: ['React.js'],
+  },
+  {
     title: 'Custom Dashboard',
     image: `url(${require('../images/customdashboard.png').default})`,
     link: 'https://custom-restaurant-dashboard.herokuapp.com/',
     description: 'A custom restaurant dashboard that parses csv data from 3rd party vendors like Doordash and UberEats. Puts everything in one place, ready for excise tax returns! Also features a rather gratuitous transforming Soundwave!',
     tech: ['React.js', 'Flask/Python', 'PosgreSQL'],
-  },
-  {
-    title: 'T-Rex Counting Game',
-    image: `url(${require('../images/trexgame.png').default})`,
-    link: 'https://victortwu.github.io/GAproject1/',
-    description: 'A counting game for kids. Drag and drop the correct plate of drumsticks to feed T-Rex!',
-    tech: ['JavaScript', 'CSS', 'HTML', 'JQuery', 'JQueryUI'],
   },
   {
     title: 'Restaurant App',
@@ -32,3 +32,9 @@ const projects = [
 ]
 
 export default projects
+
+// title: 'T-Rex Counting Game',
+// image: `url(${require('../images/trexgame.png').default})`,
+// link: 'https://victortwu.github.io/GAproject1/',
+// description: 'A counting game for kids. Drag and drop the correct plate of drumsticks to feed T-Rex!',
+// tech: ['JavaScript', 'CSS', 'HTML', 'JQuery', 'JQueryUI'],
