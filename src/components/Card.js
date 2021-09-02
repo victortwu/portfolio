@@ -29,10 +29,10 @@ const Card = (props) => {
       </div>
 
       <div className='cardButtonContainer'>
-        <a href={props.projectData.link} target='none'><li id='projectLink'>View Project</li></a>
+        <a href={props.projectData.link} target='none'><button id='projectLink'>View Project</button></a>
         {
-          props.flipCard ? <li id='flipButton' onClick={()=> props.flipBack()}>Flip Back</li>
-          : <li id='flipButton' onClick={()=> props.flipOver()}>Description</li>
+          props.flipCard ? <button id='flipButton' onClick={()=> props.flipBack()}>Flip Back</button>
+          : <button id='flipButton' onClick={()=> props.flipOver()}>Description</button>
         }
       </div>
 

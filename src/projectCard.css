@@ -106,15 +106,19 @@ li {
 }
 
 #projectLink, #flipButton {
+  background: none;
   height: 1.5rem;
+  width: 6.5rem;
   padding: .2em;
   font-family: sans-serif;
-  color: #08f7fe;
+  color: #cfd1d1;
+  border: none;
   border-radius: .2em;
+  box-shadow: 0 0 1px gray;
 }
 
 #projectLink:hover, #flipButton:hover {
-  background: rgba(255,255,255,.8);
+  box-shadow: 0 0 .5rem gray;
   cursor: pointer;
   transition: .5s;
 }
