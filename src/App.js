@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css';
 
 import TextLoop from 'react-text-loop'
@@ -7,6 +7,9 @@ import ProjectZero from './components/ProjectZero'
 import ProjectOne from './components/ProjectOne'
 import ProjectTwo from './components/ProjectTwo'
 import ProjectThree from './components/ProjectThree'
+import ProjectFour from './components/ProjectFour'
+
+
 
 
 const App = () => {
@@ -16,12 +19,9 @@ const App = () => {
 
   const hideContactForm = () => setShowForm(false)
 
-
-
   const toggleBackGround = !lightMode ? 'darkMode' : 'lightMode'
 
-
-  return (
+return (
 
     <main className={toggleBackGround}>
       <div className='mainContainer'>
@@ -72,6 +72,7 @@ const App = () => {
                   <ProjectOne/>
                   <ProjectTwo/>
                   <ProjectThree/>
+                  <ProjectFour/>
         </div>
 
             <div className='aboutContent'>

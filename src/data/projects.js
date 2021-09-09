@@ -8,11 +8,11 @@ const projects = [
     tech: ['React.js', 'Baseball Api'],
   },
   {
-    title: 'Tip Calculator App - Frontend Mentor',
-    image: `url(${require('../images/tipcalcapp.png').default})`,
-    link: 'https://frontendmentor-tip-calc-vercel-xwvk4vrpd-victortwu.vercel.app/',
-    description: "A frontend challenge from frontendmentor.io. It's a tip calculator built to design specs from Frontend Mentor.",
-    tech: ['React.js'],
+    title: 'Multi-Themed Calculator - frontendmentor.io challenge',
+    image: `url(${require('../images/calcapp.png').default})`,
+    link: 'https://calc-app-frontendmentor-victortwu.vercel.app/',
+    description: "A frontend challenge from frontendmentor.io. It's a calculator with 3 themes built to design specs from Frontend Mentor.",
+    tech: ['React.js', 'imagecolorpicker.com'],
   },
   {
     title: 'Custom Dashboard',
@@ -27,7 +27,14 @@ const projects = [
     link: 'https://victor-twu-project-2.herokuapp.com/',
     description: 'A full CRUD restaurant menu app with a shopping cart.',
     tech: ['Node.js', 'Express.js', 'MongoDB', 'EJS'],
-  }
+  },
+  {
+    title: 'Tip Calculator App - Frontend Mentor',
+    image: `url(${require('../images/tipcalcapp.png').default})`,
+    link: 'https://frontendmentor-tip-calc-vercel-xwvk4vrpd-victortwu.vercel.app/',
+    description: "A frontend challenge from frontendmentor.io. It's a tip calculator built to design specs from Frontend Mentor.",
+    tech: ['React.js'],
+  },
 
 ]
 

@@ -4,14 +4,13 @@ import '../projectCard.css'
 import createProjectData from '../data/dataObject'
 import createInlineStyle from '../data/styleObject'
 
-const ProjectZero =(props)=> {
+const ProjectFour =()=> {
 
   const [flipCard, setFlipCard] = useState(false)
 
-  const projectData = createProjectData(0)
+  const projectData = createProjectData(4)
 
   const style = createInlineStyle(projectData.image)
-
 
     const flipOver =()=> {
       setFlipCard(true)
@@ -24,16 +23,17 @@ const ProjectZero =(props)=> {
     const toggleClass = flipCard ? 'wholeCard wholeCardFlip' : 'wholeCard wholeCardFlipBack'
 
   return(
-  <Card
-      flipCard={flipCard}
-      projectData={projectData}
-      style={style}
-      flipOver={flipOver}
-      flipBack={flipBack}
-      toggleClass={toggleClass}
-      />
-  )
+
+    <Card
+        flipCard={flipCard}
+        projectData={projectData}
+        style={style}
+        flipOver={flipOver}
+        flipBack={flipBack}
+        toggleClass={toggleClass}
+        />
+      )
 
 }
 
-export default ProjectZero
+export default ProjectFour
