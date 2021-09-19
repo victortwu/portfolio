@@ -1,6 +1,13 @@
 
 const projects = [
   {
+    title: 'REST Countries App - frontendmentor.io challenge',
+    image: `url(${require('../images/countriesapp.png').default})`,
+    link: 'https://countries-app-frontendmentor.vercel.app/',
+    description: "Built to specs for REST Countries API App on frontendmentor.io. User can see all countries on the home page, click for a detailed view page, filter by region or search for a particular country. Features a dark mode and is responsive to mobile.",
+    tech: ['React.js', 'REST Countries Api'],
+  },
+  {
     title: 'Home Team Baseball App',
     image: `url(${require('../images/baseballapp.png').default})`,
     link: 'https://home-team-baseball-scores.herokuapp.com/',
@@ -22,13 +29,6 @@ const projects = [
     tech: ['React.js', 'Flask/Python', 'PosgreSQL'],
   },
   {
-    title: 'Restaurant App',
-    image: `url(${require('../images/restaurantapp.png').default})`,
-    link: 'https://victor-twu-project-2.herokuapp.com/',
-    description: 'A full CRUD restaurant menu app with a shopping cart.',
-    tech: ['Node.js', 'Express.js', 'MongoDB', 'EJS'],
-  },
-  {
     title: 'Tip Calculator App - Frontend Mentor',
     image: `url(${require('../images/tipcalcapp.png').default})`,
     link: 'https://frontendmentor-tip-calc-vercel-xwvk4vrpd-victortwu.vercel.app/',
@@ -45,3 +45,9 @@ export default projects
 // link: 'https://victortwu.github.io/GAproject1/',
 // description: 'A counting game for kids. Drag and drop the correct plate of drumsticks to feed T-Rex!',
 // tech: ['JavaScript', 'CSS', 'HTML', 'JQuery', 'JQueryUI'],
+
+// title: 'Restaurant App',
+// image: `url(${require('../images/restaurantapp.png').default})`,
+// link: 'https://victor-twu-project-2.herokuapp.com/',
+// description: 'A full CRUD restaurant menu app with a shopping cart.',
+// tech: ['Node.js', 'Express.js', 'MongoDB', 'EJS'],
