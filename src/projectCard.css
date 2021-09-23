@@ -45,8 +45,9 @@ li {
   left: 0;
   right: 0;
   width:100%;
-  backface-visibility: hidden;
   transform-style: preserve-3d;
+
+  backface-visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -57,6 +58,7 @@ li {
 .backPanel {
   transform: rotateY(.5turn);
   background-color: #4a4d5e;
+
   text-align: justify;
   font-family: sans-serif;
   color: white;

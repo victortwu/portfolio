@@ -1,13 +1,6 @@
 
 const projects = [
   {
-    title: 'REST Countries App - frontendmentor.io challenge',
-    image: `url(${require('../images/countriesapp.png').default})`,
-    link: 'https://countries-app-frontendmentor.vercel.app/',
-    description: "Built to specs for REST Countries API App on frontendmentor.io. User can see all countries on the home page, click for a detailed view page, filter by region or search for a particular country. Features a dark mode and is responsive to mobile.",
-    tech: ['React.js', 'REST Countries Api'],
-  },
-  {
     title: 'Home Team Baseball App',
     image: `url(${require('../images/baseballapp.png').default})`,
     link: 'https://home-team-baseball-scores.herokuapp.com/',
@@ -20,6 +13,13 @@ const projects = [
     link: 'https://calc-app-frontendmentor-victortwu.vercel.app/',
     description: "A frontend challenge from frontendmentor.io. It's a calculator with 3 themes built to design specs from Frontend Mentor.",
     tech: ['React.js', 'imagecolorpicker.com'],
+  },
+  {
+    title: 'REST Countries App - frontendmentor.io challenge',
+    image: `url(${require('../images/countriesapp.png').default})`,
+    link: 'https://countries-app-frontendmentor.vercel.app/',
+    description: "Built to specs for REST Countries API App on frontendmentor.io. User can see all countries on the home page, click for a detailed view page, filter by region or search for a particular country. Features a dark mode and is responsive to mobile.",
+    tech: ['React.js', 'REST Countries Api'],
   },
   {
     title: 'Custom Dashboard',
