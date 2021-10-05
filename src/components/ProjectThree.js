@@ -7,6 +7,7 @@ import createInlineStyle from '../data/styleObject'
 const ProjectThree =()=> {
 
   const [flipCard, setFlipCard] = useState(false)
+  const [viewDescription, setViewDescription] = useState(false)
 
   const projectData = createProjectData(3)
 
@@ -22,15 +23,24 @@ const ProjectThree =()=> {
 
     const toggleClass = flipCard ? 'wholeCard wholeCardFlip' : 'wholeCard wholeCardFlipBack'
 
+    const toggleViewDes =()=> {
+      setViewDescription(!viewDescription)
+    }
+
+    const descriptionViewClass = viewDescription ? 'backPanel showDes' : 'backPanel hideDes'
+
   return(
 
     <Card
         flipCard={flipCard}
+        viewDescription={viewDescription}
         projectData={projectData}
         style={style}
         flipOver={flipOver}
         flipBack={flipBack}
         toggleClass={toggleClass}
+        toggleViewDes={toggleViewDes}
+        descriptionViewClass={descriptionViewClass}
         />
   )
 

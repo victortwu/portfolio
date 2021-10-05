@@ -12,7 +12,7 @@ const Card = (props) => {
                 <h3 id='projTitle'>{props.projectData.title}</h3>
               </div>
 
-              <div className='backPanel'>
+              <div className={props.descriptionViewClass}>
                 <p>{props.projectData.description}</p>
                 <div className='techListContainer'>
                   <h4>Technologies Used:</h4>
@@ -32,10 +32,11 @@ const Card = (props) => {
 
             <div className='cardButtonContainer'>
               <a href={props.projectData.link} target='none'><button id='projectLink'>View Project</button></a>
-              {
-                props.flipCard ? <button id='flipButton' onClick={()=> props.flipBack()}>Flip Back</button>
-                : <button id='flipButton' onClick={()=> props.flipOver()}>Description</button>
-              }
+              <button id='flipButton' onClick={()=> props.toggleViewDes()}>
+                  {
+                    props.viewDescription ? 'Back' : 'Description'
+                  }
+              </button>
             </div>
 
           </div>
@@ -44,3 +45,8 @@ const Card = (props) => {
 }
 
 export default Card
+
+// {
+//   props.flipCard ? <button id='flipButton' onClick={()=> props.flipBack()}>Flip Back</button>
+//   : <button id='flipButton' onClick={()=> props.flipOver()}>Description</button>
+// }

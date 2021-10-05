@@ -8,6 +8,7 @@ li {
   filter: drop-shadow(0 0 0.25rem black);
   color: white;
   transform: translateZ(3rem);
+
 }
 
 .flipCardContainer {
@@ -28,7 +29,10 @@ li {
   width: 20rem;
   height: 20rem;
   transform-style: preserve-3d;
+
 }
+
+/* ========= Note: 3d flip card has been disabled due to chrome desktop bug! ======= */
 
 .wholeCardFlip {
   animation: flip 1.5s forwards
@@ -36,6 +40,14 @@ li {
 
 .wholeCardFlipBack {
   animation: flipBack 1.5s forwards
+}
+
+.showDes {
+  animation: showDescription .5s forwards
+}
+
+.hideDes {
+  animation: hideDescription .5s forwards
 }
 
 .frontPanel, .backPanel {
@@ -46,7 +58,7 @@ li {
   right: 0;
   width:100%;
   transform-style: preserve-3d;
-
+  /* backface-visibility: visible; */
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
@@ -55,22 +67,25 @@ li {
   box-shadow: 0 0 0.7em #f148fb;
 }
 
-.backPanel {
-  transform: rotateY(.5turn);
-  background-color: #4a4d5e;
 
+.backPanel {
+  /* transform: rotateY(.5turn); */
+  background-color: #4a4d5e;
   text-align: justify;
   font-family: sans-serif;
   color: white;
+
 }
 
 .backPanel > p {
   padding-left: 2rem;
   padding-right: 2rem;
+
   transform: translateZ(3rem);
 }
 
 .techListContainer {
+
   background-color: rgba(255,255,255, .1);
   margin-left: 2rem;
   margin-right: 2rem;
@@ -125,7 +140,7 @@ li {
   transition: .5s;
 }
 
-@keyframes flip {
+/* @keyframes flip {
   0% {transform: perspective(35rem) rotateY(0)}
   100% {transform: perspective(35rem) rotateY(.5turn)}
 }
@@ -133,4 +148,14 @@ li {
 @keyframes flipBack {
   0% {transform: perspective(35rem) rotateY(.5turn)}
   100% {transform: perspective(35rem) rotateY(0)}
+} */
+
+@keyframes showDescription {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes hideDescription {
+  0% {opacity: 1}
+  100% {opacity: 0}
 }
