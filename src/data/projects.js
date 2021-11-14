@@ -1,11 +1,11 @@
 
 const projects = [
   {
-    title: 'Home Team Baseball App',
-    image: `url(${require('../images/baseballapp.png').default})`,
-    link: 'https://home-team-baseball-scores.herokuapp.com/',
-    description: "This baseball scores app is biased towards my home team, The Mariners. Featuring responsive mobile first design and plain CSS3. The landing page renders today's home score and AL West division standings are listed first. Go Mariners!",
-    tech: ['React.js', 'Baseball Api'],
+    title: 'Astronauts In Space',
+    image: `url(${require('../images/astrospace.png').default})`,
+    link: 'https://copy-astro-space-no-auth.vercel.app/',
+    description: "See a live feed of the International Space Station and the astronauts currently in space!",
+    tech: ['React.js', 'Express.js/Node.js', 'CSS Modules', 'Leaflet.js'],
   },
   {
     title: 'Multi-Themed Calculator - frontendmentor.io challenge',
@@ -51,3 +51,9 @@ export default projects
 // link: 'https://victor-twu-project-2.herokuapp.com/',
 // description: 'A full CRUD restaurant menu app with a shopping cart.',
 // tech: ['Node.js', 'Express.js', 'MongoDB', 'EJS'],
+
+// title: 'Home Team Baseball App',
+// image: `url(${require('../images/baseballapp.png').default})`,
+// link: 'https://home-team-baseball-scores.herokuapp.com/',
+// description: "This baseball scores app is biased towards my home team, The Mariners. Featuring responsive mobile first design and plain CSS3. The landing page renders today's home score and AL West division standings are listed first. Go Mariners!",
+// tech: ['React.js', 'Baseball Api'],
